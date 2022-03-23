@@ -80,7 +80,7 @@ h2 {
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 48px;
+  margin-top: 64px;
 }
 
 /* aligning its self to the center of the vertical axis */
@@ -91,7 +91,7 @@ header {
 }
 
 h1 {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   font-size: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
@@ -111,7 +111,7 @@ h1 {
   stroke: #087f5b;
   height: 32px;
   width: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .features-title {
@@ -145,6 +145,11 @@ h1 {
   margin-bottom: 24px;
   font-size: 18px;
   line-height: 1.7;
+  color: #e6fcf5;
+}
+
+.testimonial-author {
+  color: #c3fae8;
 }
 
 .first-micro {
@@ -161,7 +166,7 @@ h1 {
 /* microgreens */
 
 .microgreen-box {
-  padding: 24px;
+  padding: 32px;
 }
 
 h3 {
@@ -186,14 +191,14 @@ h3 {
 }
 .microgreen-details {
   list-style: none;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 .microgreen-details li {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .microgreen-details li:last-child {
@@ -210,6 +215,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  align-items: center;
 }
 
 img {

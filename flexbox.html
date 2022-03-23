@@ -8,7 +8,6 @@
     <style>
       .el--1 {
         background-color: blueviolet;
-        align-self: flex-start;
       }
       .el--2 {
         background-color: orangered;
@@ -39,6 +38,8 @@
       }
 
       .container {
+        border: 1px solid black;
+        height: 400px;
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
@@ -48,22 +49,69 @@
         /* FLEXBOX */
 
         display: flex;
+        gap: 20px;
+        justify-content: start;
+        align-content: end;
+        align-items: flex-end;
+        flex-wrap: wrap;
+      }
+
+      .el--1 {
+        align-self: stretch;
+        background-color: aqua;
+      }
+
+      /* .el {
+        align-self: stretch;
+      } */
+
+      .second-container {
+        background-color: #ddd;
+        display: flex;
         justify-content: space-between;
+        /* justify content works on the horizontal level */
+        justify-content: center;
+        justify-content: start;
+        justify-content: end;
         align-items: center;
-        flex-basis: 250px;
+        align-items: flex-start;
+        align-items: flex-end;
+        align-items: stretch;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="el el--1">HTML</div>
-      <div class="el el--2">and</div>
+      <div class="el el--2">and i will never let you go</div>
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
-      <!-- <div class="el el--5">amazing</div>
+      <div class="el el--5">amazing</div>
       <div class="el el--6">languages</div>
       <div class="el el--7">to</div>
-      <div class="el el--8">learn</div> -->
+      <div class="el el--8">learn</div>
+    </div>
+
+    <div class="second-container">
+      <section class="first-section">
+        <p>my first paragraph</p>
+      </section>
+
+      <section class="second-section">
+        <p>my second paragraph</p>
+      </section>
+
+      <section class="third-section">
+        <p>my third paragraph</p>
+      </section>
+
+      <h1>This is awesome</h1>
+
+      <ol class="products">
+        <li>phone</li>
+        <li>card</li>
+        <li>cosmetics</li>
+      </ol>
     </div>
   </body>
 </html>
